@@ -1,0 +1,10 @@
+/* Fix cursor */
+.reveal div.CodeMirror-cursor{
+  border-left: 1px solid black;
+  border-right: none;
+}
+
+/* Fix code lines */
+.reveal .CodeMirror pre {
+  box-shadow: none;
+}

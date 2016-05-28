@@ -1,0 +1,43 @@
+.reveal .flex-container {
+  display: flex;
+}
+
+.reveal .box {
+  border: 1px solid #006dcc;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.reveal .box h1,
+.reveal .box h2,
+.reveal .box h3,
+.reveal .box h4,
+.reveal .box h5,
+.reveal .box h6 {
+  text-align: center;
+}
+
+.reveal footer {
+  font-size: 0.5em;
+  margin-top: 10px;
+}
+
+.reveal .col-1 {
+  flex-basis: 98%;
+  margin: 0 1%;
+}
+
+.reveal .col-2 {
+  flex-basis: 48%;
+  margin: 0 1%;
+}
+
+.reveal .col-3 {
+  flex-basis: 31.3333333333%;
+  margin: 0 1%;
+}
+
+.reveal .col-4 {
+  flex-basis: 23%;
+  margin: 0 1%;
+}

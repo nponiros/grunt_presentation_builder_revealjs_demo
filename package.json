@@ -1,0 +1,31 @@
+{
+  "name": "grunt-presentation-builder-revealjs-demo",
+  "description": "Demo of using the grunt-presentation-builder to build a reveal.js presentation",
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/nponiros/grunt_presentation_builder_revealjs_demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nponiros/grunt_presentation_builder_revealjs_demo.git"
+  },
+  "dependencies": {
+    "codemirror": "5.15.2",
+    "reveal.js": "3.3.0"
+  },
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-connect": "1.0.2",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-presentation-builder": "",
+    "load-grunt-tasks": "3.5.0"
+  },
+  "author": "Nikolas Poniros <nikolas@poniros.de> (http://poniros.de/)",
+  "license": "MIT",
+  "keywords": [],
+  "engines": {
+    "node": ">=5.0.0"
+  },
+  "private": true
+}

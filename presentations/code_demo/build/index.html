@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Layouts</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/extras.css">
+
+		<!-- Code highlighting -->
+		<link rel="stylesheet" href="css/zenburn.css">
+
+    <link rel="stylesheet" href="css/codemirror.css">
+
+    <link rel="stylesheet" href="css/reveal_codemirror_compatibility.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+  <header>
+    <h1>Slide with code</h1>
+  </header>
+  <pre><code class="language-javascript">const a = 2;
+function plus2(b) {
+  return a + b;
+}
+
+const res = plus2(4);
+</code></pre>
+
+  <footer>
+    Copyright....
+  </footer>
+</section>
+<section>
+  <header>
+    <h1>With editor (JS)</h1>
+  </header>
+<textarea code>
+const a = 2;
+function plus2(b) {
+  return a + b;
+}
+const res = plus2(4);
+</textarea>
+  <footer>
+    Copyright....
+  </footer>
+</section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+		<script src="js/highlight.js"></script>
+
+    <!-- Codemirror -->
+    <script src="js/codemirror.js"></script>
+    <!-- Mode for code mirror -->
+    <script src="js/javascript.js"></script>
+
+    <script src="js/codemirror_textarea.js"></script>
+
+    <script>
+			Reveal.initialize({
+				history: true,
+        minScale: 1 // Needed for codemirror. Fixes cursor positioning
+			});
+			hljs.initHighlightingOnLoad();
+      prepareCodemirror();
+		</script>
+	</body>
+</html>
