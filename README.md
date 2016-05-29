@@ -6,6 +6,8 @@ There are currently two demos, one under `./presentations/layouts_demo` showcasi
 ## Usage
 TODO
 
+explanation for options can be found grunt-presentation-builder
+
 ## Directory Structure
 
 ### ./css
@@ -27,7 +29,6 @@ The code demo has two additional directories (css and js) in which an extra styl
 
 ## TODO
 
-* fix grunt-presentation-builder version in package.json
 * add pdf task
 * add usage information
 

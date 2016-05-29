@@ -1,16 +1,17 @@
 (function(CodeMirror) {
   function init(options) {
-    function createEditor(textarea, options) {
-      options = options || {
-        lineNumbers: true,
-        matchBrackets: true
-      };
+    function createEditor(textarea, options, mode) {
+      options = options || {};
+      if (mode) {
+        options.mode = mode;
+      }
       CodeMirror.fromTextArea(textarea, options)
     }
 
     const textareas = document.querySelectorAll('textarea[code]');
     for (let i = 0; i < textareas.length; i++) {
-      createEditor(textareas[i], options);
+      const mode = textareas[i].dataset.mode;
+      createEditor(textareas[i], options, mode);
     }
   }
 

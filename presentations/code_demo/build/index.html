@@ -40,7 +40,7 @@ const res = plus2(4);
   <header>
     <h1>With editor (JS)</h1>
   </header>
-<textarea code>
+<textarea code data-mode="javascript">
 const a = 2;
 function plus2(b) {
   return a + b;
@@ -71,7 +71,9 @@ const res = plus2(4);
         minScale: 1 // Needed for codemirror. Fixes cursor positioning
 			});
 			hljs.initHighlightingOnLoad();
-      prepareCodemirror();
+      prepareCodemirror({
+				lineNumbers: true
+			});
 		</script>
 	</body>
 </html>
